@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+    <meta charset="UTF-8"> <!-- Définit le jeu de caractères comme UTF-8 pour supporter les caractères spéciaux -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptation du site aux écrans mobiles -->
+    <title>Résultats Loto</title> <!-- Titre de la page, affiché dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS externe pour le style de la page -->
+	<link rel="icon" type="image/ico" href="favi49.ico">
+	
+	
+</head> 
+<body>
+
+    <div class="container"> <!-- Un conteneur pour tout le contenu de la page afin de faciliter la mise en page et le style -->
+        <h1> __ </h1>
+	<section class="logo-grid">
+        <div class="logo-item">
+            <a href="index.html">
+                <img src="loto49_1.png" alt="Logo Page Aceuil">
+            </a>
+        </div>
+    </section>
+	
+		<img src="flag_uk.png" alt="frag uk" class="icon">
+		<h1>Enter your Loto numbers</h1> <!-- Titre principal affiché sur la page -->
+		<h4>and check if they are already winners</h4>
+		<h4><< Results since 2001 >></h4>
+        
+        <div class="input-container"> <!-- Conteneur pour regrouper les champs de saisie -->
+            <!-- Les champs de saisie pour entrer les numéros du loto -->
+            <input type="number" id="num1" placeholder="Num1" min="1" max="59" required> 
+            <input type="number" id="num2" placeholder="Num2" min="1" max="59" required>
+            <input type="number" id="num3" placeholder="Num3" min="1" max="59" required>
+            <input type="number" id="num4" placeholder="Num4" min="1" max="59" required>
+            <input type="number" id="num5" placeholder="Num5" min="1" max="59" required>
+            <input type="number" id="num6" placeholder="Num6" min="1" max="59" required>
+        </div>
+		
+        <!-- Un bouton pour lancer la vérification des numéros -->
+        <button id="checkButton">Check</button> 
+		<h4>Latest result:</h4>
+		<h3>Wednesday 18th Sept. 2024 - Draw 75</h3>
+		
+		<div class="image-container">
+			<img src="p7.ico" alt="Image 1" class="icon">
+			<img src="p20.ico" alt="Image 2" class="icon">
+			<img src="p33.ico" alt="Image 3" class="icon">
+			<img src="p50.ico" alt="Image 4" class="icon">
+			<img src="p51.ico" alt="Image 5" class="icon">
+			<img src="p57.ico" alt="Image 6" class="icon">
+			<h1>+</1>
+			<img src="p44.ico" alt="Image 7" class="icon">
+		</div>
+
+        <!-- Un conteneur pour afficher le nombre total de correspondances -->
+        <div id="totalMatches" style="font-weight: bold; margin-top: 20px;"></div>
+
+        <!-- Un conteneur pour afficher les résultats après la vérification -->
+        <div id="results"></div> 
+    </div>
+
+
+    <!-- Inclusion du fichier JavaScript pour ajouter des fonctionnalités -->
+    <script src="scriptuk.js"></script> 
+	
+</body>
+</html>
